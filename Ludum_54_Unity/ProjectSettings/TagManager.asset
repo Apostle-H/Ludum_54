@@ -11,6 +11,8 @@ TagManager:
   - 
   - Water
   - UI
+  - PuzzleSocket
+  - ConnectionSocket
   - 
   - 
   - 
@@ -34,9 +36,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - MouseInteractable
   m_SortingLayers:
   - name: Default
     uniqueID: 0

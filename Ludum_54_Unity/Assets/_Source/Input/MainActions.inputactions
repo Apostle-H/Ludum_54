@@ -1,0 +1,54 @@
+{
+    "name": "MainActions",
+    "maps": [
+        {
+            "name": "MouseMap",
+            "id": "a891e03a-3931-4661-8c38-52fc6e3f7433",
+            "actions": [
+                {
+                    "name": "Drag",
+                    "type": "Value",
+                    "id": "49aa076b-84c3-41e9-a52e-7434b64b2bf4",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "67ff7df5-43a5-4ea6-866f-d17e2455e4ff",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "49a4082c-fcee-4b96-9e81-82605c353345",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drag",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d38e8a4-9b54-4847-85a6-b3a9eb27a45c",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
