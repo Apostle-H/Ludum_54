@@ -1697,6 +1697,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 290412947}
+  - component: {fileID: 290412948}
   m_Layer: 0
   m_Name: GameStaters
   m_TagString: Untagged
@@ -1722,6 +1723,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &290412948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290412946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82c511afd3fd432b8004abfb25d3dda9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connectGameParent: {fileID: 1655562335}
+  flipperGameParent: {fileID: 398565759}
+  repeaterGameParent: {fileID: 774515819}
 --- !u!1 &305372044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2235,7 +2251,8 @@ GameObject:
   - component: {fileID: 379210660}
   - component: {fileID: 379210659}
   - component: {fileID: 379210658}
-  m_Layer: 0
+  - component: {fileID: 379210661}
+  m_Layer: 31
   m_Name: Flipper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2267,7 +2284,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2347,6 +2364,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d58b6440624d1bac626a527696dbcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &379210661
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379210656}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &391194770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,7 +2651,6 @@ GameObject:
   m_Component:
   - component: {fileID: 398565760}
   - component: {fileID: 398565761}
-  - component: {fileID: 398565763}
   - component: {fileID: 398565762}
   m_Layer: 0
   m_Name: Flipper
@@ -2717,21 +2754,6 @@ MonoBehaviour:
   - {fileID: 1298891801}
   - {fileID: 363882366}
   - {fileID: 1299502102}
---- !u!114 &398565763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398565759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9451791e7b3f4ced9aa6318668d51b18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardManager: {fileID: 398565761}
-  cardsRandomizer: {fileID: 398565762}
-  timeToComplete: 10
 --- !u!1 &452373956
 GameObject:
   m_ObjectHideFlags: 0
@@ -6370,6 +6392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1086843436}
+  - component: {fileID: 1086843437}
   m_Layer: 0
   m_Name: MiniGames
   m_TagString: Untagged
@@ -6395,6 +6418,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1086843437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086843435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9451791e7b3f4ced9aa6318668d51b18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardManager: {fileID: 398565761}
+  cardsRandomizer: {fileID: 398565762}
+  timeToComplete: 10
 --- !u!1 &1195668028
 GameObject:
   m_ObjectHideFlags: 0
@@ -8321,7 +8359,8 @@ GameObject:
   - component: {fileID: 1473706213}
   - component: {fileID: 1473706212}
   - component: {fileID: 1473706211}
-  m_Layer: 0
+  - component: {fileID: 1473706214}
+  m_Layer: 31
   m_Name: Connect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8353,7 +8392,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -8433,6 +8472,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b07625409143d4901b75a79603e7ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &1473706214
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473706209}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1474455723
 GameObject:
   m_ObjectHideFlags: 0
@@ -9362,7 +9422,8 @@ GameObject:
   - component: {fileID: 1626139055}
   - component: {fileID: 1626139054}
   - component: {fileID: 1626139053}
-  m_Layer: 0
+  - component: {fileID: 1626139056}
+  m_Layer: 31
   m_Name: Repeater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9394,7 +9455,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -9474,6 +9535,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c94118e7e0c54f0b8d8f4ce1dcb00fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &1626139056
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626139051}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1635292693
 GameObject:
   m_ObjectHideFlags: 0
@@ -10974,6 +11056,7 @@ MonoBehaviour:
   - {fileID: 1635292693}
   - {fileID: 814087442}
   - {fileID: 1086843435}
+  - {fileID: 290412946}
   interactionsScope:
     <MouseHandlerConfigSO>k__BackingField: {fileID: 11400000, guid: 3f523357bde7f924397c4db8348f4894, type: 2}
   puzzleScope:
@@ -11005,11 +11088,17 @@ MonoBehaviour:
   connectGameScope:
     <ConnectGameSceneConfig>k__BackingField:
       <EndSocketsRandomizer>k__BackingField: {fileID: 1203259217}
-      <ConnectionEnds>k__BackingField: []
+      <ConnectionEnds>k__BackingField:
+      - {fileID: 1881565858}
+      - {fileID: 111777404}
+      - {fileID: 19659504}
+      - {fileID: 162729738}
     <ConnectionEndConfigSO>k__BackingField: {fileID: 11400000, guid: d1d262283b5e741498c648b278f5daa3, type: 2}
   flipperScope:
     <FlipperGameSceneConfig>k__BackingField:
-      <FlipperGame>k__BackingField: {fileID: 398565763}
+      <FlipperGame>k__BackingField: {fileID: 1086843437}
+  miniGamesScope:
+    <MiniGamesManager>k__BackingField: {fileID: 290412948}
 --- !u!1 &2037618031
 GameObject:
   m_ObjectHideFlags: 0
