@@ -2493,14 +2493,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1040140970208261733, guid: 9d4c1632c99e9694a848229c5a70c11f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 1040140970208261733, guid: 9d4c1632c99e9694a848229c5a70c11f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.78
-      objectReference: {fileID: 0}
     - target: {fileID: 1040140970335397244, guid: 9d4c1632c99e9694a848229c5a70c11f, type: 3}
       propertyPath: memoriesGame
       value: 
@@ -2555,22 +2547,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1040140971448371381, guid: 9d4c1632c99e9694a848229c5a70c11f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622546572201546496, guid: 9d4c1632c99e9694a848229c5a70c11f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.92
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622546572201546496, guid: 9d4c1632c99e9694a848229c5a70c11f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4038210938821508686, guid: 9d4c1632c99e9694a848229c5a70c11f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 4038210938821508686, guid: 9d4c1632c99e9694a848229c5a70c11f, type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2780,6 +2756,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1086843436}
     m_Modifications:
+    - target: {fileID: 8672273998647240284, guid: 1b25f9a27445e8e4d925ae237bae9be0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8672274000466191416, guid: 1b25f9a27445e8e4d925ae237bae9be0, type: 3}
       propertyPath: m_Name
       value: Flipper
