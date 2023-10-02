@@ -27,30 +27,20 @@ namespace Audio
         private void OnDisable()
         {
             PlayerPrefs.SetFloat(MASTER_VOLUME, masterSlider.value);
-            PlayerPrefs.SetFloat(MUSIC_VOLUME, musicSlider.value);
-            PlayerPrefs.SetFloat(SFX_VOLUME, sfxSlider.value);
         }
 
         private void Load()
         {
             masterSlider.minValue = SLIDERS_MIN_VALUE;
-            musicSlider.minValue = SLIDERS_MIN_VALUE;
-            sfxSlider.minValue = SLIDERS_MIN_VALUE;
 
             masterSlider.value = PlayerPrefs.GetFloat(MASTER_VOLUME, 1f);
-            musicSlider.value = PlayerPrefs.GetFloat(MUSIC_VOLUME, 1f);
-            sfxSlider.value = PlayerPrefs.GetFloat(SFX_VOLUME, 1f);
 
             SetMasterVolume(masterSlider.value);
-            SetMusicVolume(musicSlider.value);
-            SetSfxVolume(sfxSlider.value);
         }
 
         private void Bind()
         {
             masterSlider.onValueChanged.AddListener(SetMasterVolume);
-            musicSlider.onValueChanged.AddListener(SetMusicVolume);
-            sfxSlider.onValueChanged.AddListener(SetSfxVolume);
         }
 
         private void SetMasterVolume(float value)
