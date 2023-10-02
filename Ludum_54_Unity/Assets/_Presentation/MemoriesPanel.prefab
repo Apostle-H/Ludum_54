@@ -1392,7 +1392,7 @@ GameObject:
   - component: {fileID: 1040140969914559579}
   - component: {fileID: 1040140969914559556}
   m_Layer: 31
-  m_Name: Memory
+  m_Name: Family_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1447,8 +1447,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 76beef9fdae7b48468ddf07d0400a374, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: 'Daughter: How are you? Don''t forget to save your memories
+    when you go to bed!
+
+    You: Okay'
   <MemoryType>k__BackingField: 0
 --- !u!50 &1040140969914559579
 Rigidbody2D:
@@ -2558,23 +2561,23 @@ Transform:
   - {fileID: 1040140969914559576}
   - {fileID: 1040140971871933069}
   - {fileID: 1040140970422941830}
-  - {fileID: 7891200856419078845}
   - {fileID: 5716739181568543935}
+  - {fileID: 7891200856419078845}
   - {fileID: 115478353746170062}
-  - {fileID: 8919220727619456689}
   - {fileID: 7594239016884343929}
+  - {fileID: 8919220727619456689}
   - {fileID: 8896231707168584471}
-  - {fileID: 6397958295785083537}
   - {fileID: 8665308601050178149}
+  - {fileID: 6397958295785083537}
   - {fileID: 2149211525879496872}
-  - {fileID: 2844108221699214766}
   - {fileID: 7514303984046687678}
+  - {fileID: 2844108221699214766}
   - {fileID: 175586019213649268}
-  - {fileID: 430411766770530049}
   - {fileID: 6871197504976407606}
+  - {fileID: 430411766770530049}
   - {fileID: 2920432757076536065}
-  - {fileID: 3554406311924926874}
   - {fileID: 2793136629466809509}
+  - {fileID: 3554406311924926874}
   - {fileID: 9072078096553313150}
   m_Father: {fileID: 1040140971448371381}
   m_RootOrder: 1
@@ -3121,7 +3124,7 @@ GameObject:
   - component: {fileID: 1040140970422941828}
   - component: {fileID: 1040140970422941831}
   m_Layer: 31
-  m_Name: Memory_1 (1)
+  m_Name: Gang_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3176,8 +3179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 678095381d851334fb550c5032ba1a81, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: "I haven\u2019t opened this album for a long time. Maybe
+    I'll do it tomorrow..."
   <MemoryType>k__BackingField: 2
 --- !u!50 &1040140970422941828
 Rigidbody2D:
@@ -7536,7 +7540,7 @@ GameObject:
   - component: {fileID: 1040140971871933067}
   - component: {fileID: 1040140971871933064}
   m_Layer: 31
-  m_Name: Memory_1
+  m_Name: Personality_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7591,8 +7595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: daf2ab606d4db0d4f9ecf4c02137d2a8, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 21300000, guid: d75014ba7863a3b4b88a027e779eb7a7, type: 3}
+  <Text>k__BackingField: Meh...
   <MemoryType>k__BackingField: 1
 --- !u!50 &1040140971871933067
 Rigidbody2D:
@@ -8789,7 +8793,7 @@ GameObject:
   - component: {fileID: 7278467316284015864}
   - component: {fileID: 6267504558885347484}
   m_Layer: 31
-  m_Name: Memory_1 (7)
+  m_Name: Gang_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8844,8 +8848,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 678095381d851334fb550c5032ba1a81, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 21300000, guid: fc820d09b3f8bd74ebe2a4a8b2f42787, type: 3}
+  <Text>k__BackingField: '"One day before"'
   <MemoryType>k__BackingField: 2
 --- !u!50 &7278467316284015864
 Rigidbody2D:
@@ -9665,7 +9669,7 @@ GameObject:
   - component: {fileID: 6491956421097337981}
   - component: {fileID: 1208367741577887371}
   m_Layer: 31
-  m_Name: Memory (4)
+  m_Name: Family_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9688,7 +9692,7 @@ Transform:
   - {fileID: 7171091579088070037}
   - {fileID: 1801936919774613571}
   m_Father: {fileID: 1040140970208261733}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3384743606962870382
 MonoBehaviour:
@@ -9720,8 +9724,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 76beef9fdae7b48468ddf07d0400a374, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: "Daughter: You still haven\u2019t answered yesterday\u2019s
+    question! Tell me what you're running from!"
   <MemoryType>k__BackingField: 0
 --- !u!50 &6491956421097337981
 Rigidbody2D:
@@ -10039,7 +10044,7 @@ GameObject:
   - component: {fileID: 2291304542091711992}
   - component: {fileID: 6339950561296698785}
   m_Layer: 31
-  m_Name: Memory_1 (8)
+  m_Name: Personality_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10062,7 +10067,7 @@ Transform:
   - {fileID: 5624741228777629605}
   - {fileID: 5558983901764900422}
   m_Father: {fileID: 1040140970208261733}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6290131531519088256
 MonoBehaviour:
@@ -10094,8 +10099,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: daf2ab606d4db0d4f9ecf4c02137d2a8, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: Could I exist in two worlds at the same time?
   <MemoryType>k__BackingField: 1
 --- !u!50 &2291304542091711992
 Rigidbody2D:
@@ -11039,7 +11044,7 @@ GameObject:
   - component: {fileID: 4000566619517029188}
   - component: {fileID: 8863585705681573285}
   m_Layer: 31
-  m_Name: Memory_1 (13)
+  m_Name: Gang_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11094,8 +11099,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 678095381d851334fb550c5032ba1a81, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: 'You: Hmm letter
+
+    Letter: Hello boss, haven''t heard
+    from you for a long time. If you have any left in you, come to our bar in the
+    evening'
   <MemoryType>k__BackingField: 2
 --- !u!50 &4000566619517029188
 Rigidbody2D:
@@ -11165,7 +11174,7 @@ GameObject:
   - component: {fileID: 2392398011297793203}
   - component: {fileID: 3523816976194396920}
   m_Layer: 31
-  m_Name: Memory_1 (4)
+  m_Name: Personality_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11188,7 +11197,7 @@ Transform:
   - {fileID: 911431453467084739}
   - {fileID: 5211643074098881939}
   m_Father: {fileID: 1040140970208261733}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4201513964596191839
 MonoBehaviour:
@@ -11220,8 +11229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: daf2ab606d4db0d4f9ecf4c02137d2a8, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: I must remember
   <MemoryType>k__BackingField: 1
 --- !u!50 &2392398011297793203
 Rigidbody2D:
@@ -11539,7 +11548,7 @@ GameObject:
   - component: {fileID: 7825997885671336530}
   - component: {fileID: 5432294287181702930}
   m_Layer: 31
-  m_Name: Memory_1 (11)
+  m_Name: Gang_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11594,8 +11603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 678095381d851334fb550c5032ba1a81, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: '"Last sunset"'
   <MemoryType>k__BackingField: 2
 --- !u!50 &7825997885671336530
 Rigidbody2D:
@@ -12163,7 +12172,7 @@ GameObject:
   - component: {fileID: 8179592405230632123}
   - component: {fileID: 1718304599054768918}
   m_Layer: 31
-  m_Name: Memory_1 (6)
+  m_Name: Personality_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12186,7 +12195,7 @@ Transform:
   - {fileID: 4187099909594558949}
   - {fileID: 626574491110050779}
   m_Father: {fileID: 1040140970208261733}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &687915121414039384
 MonoBehaviour:
@@ -12218,8 +12227,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: daf2ab606d4db0d4f9ecf4c02137d2a8, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: A lot of water has already flowed under the bridge. Perhaps
+    it was worth staying with them?
   <MemoryType>k__BackingField: 1
 --- !u!50 &8179592405230632123
 Rigidbody2D:
@@ -12664,7 +12674,7 @@ GameObject:
   - component: {fileID: 7732801577518184052}
   - component: {fileID: 816168280004508280}
   m_Layer: 31
-  m_Name: Memory (6)
+  m_Name: Family_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12687,7 +12697,7 @@ Transform:
   - {fileID: 6061604569206103483}
   - {fileID: 2380883887005816483}
   m_Father: {fileID: 1040140970208261733}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2983785751226040823
 MonoBehaviour:
@@ -12719,8 +12729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 76beef9fdae7b48468ddf07d0400a374, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: I will forgive myself and move on no matter what!
   <MemoryType>k__BackingField: 0
 --- !u!50 &7732801577518184052
 Rigidbody2D:
@@ -13415,7 +13425,7 @@ GameObject:
   - component: {fileID: 2994838105316189597}
   - component: {fileID: 8064036974105468804}
   m_Layer: 31
-  m_Name: Memory (1)
+  m_Name: Family_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13438,7 +13448,7 @@ Transform:
   - {fileID: 6938228421685457771}
   - {fileID: 8854007900171479774}
   m_Father: {fileID: 1040140970208261733}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6654824300943494363
 MonoBehaviour:
@@ -13470,8 +13480,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 76beef9fdae7b48468ddf07d0400a374, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: "Daughter: Did you sleep well? Is the new implant acting
+    up?\nYou: It\u2019s a strange feeling, but everything is fine."
   <MemoryType>k__BackingField: 0
 --- !u!50 &2994838105316189597
 Rigidbody2D:
@@ -14327,7 +14338,7 @@ GameObject:
   - component: {fileID: 2066865417792701360}
   - component: {fileID: 300001887653711995}
   m_Layer: 31
-  m_Name: Memory (3)
+  m_Name: Family_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14350,7 +14361,7 @@ Transform:
   - {fileID: 8870577438620126277}
   - {fileID: 768301871180705535}
   m_Father: {fileID: 1040140970208261733}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6852043340703744265
 MonoBehaviour:
@@ -14382,8 +14393,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 76beef9fdae7b48468ddf07d0400a374, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: 'Daughter: Would you like to return everything as it was?
+
+    You:
+    ...'
   <MemoryType>k__BackingField: 0
 --- !u!50 &2066865417792701360
 Rigidbody2D:
@@ -14696,7 +14710,7 @@ GameObject:
   - component: {fileID: 3474278834140011953}
   - component: {fileID: 1270121133079138914}
   m_Layer: 31
-  m_Name: Memory (2)
+  m_Name: Family_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14719,7 +14733,7 @@ Transform:
   - {fileID: 7751029050164829332}
   - {fileID: 4197535634467173156}
   m_Father: {fileID: 1040140970208261733}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8489836450110879737
 MonoBehaviour:
@@ -14751,8 +14765,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 76beef9fdae7b48468ddf07d0400a374, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: 'Daughter: The burden on you is not light now, is it?
+
+    You:
+    Should I answer something here?'
   <MemoryType>k__BackingField: 0
 --- !u!50 &3474278834140011953
 Rigidbody2D:
@@ -14822,7 +14839,7 @@ GameObject:
   - component: {fileID: 7917413809741043254}
   - component: {fileID: 1740454360101793884}
   m_Layer: 31
-  m_Name: Memory_1 (10)
+  m_Name: Personality_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14845,7 +14862,7 @@ Transform:
   - {fileID: 8407783736996457758}
   - {fileID: 6312518107944925908}
   m_Father: {fileID: 1040140970208261733}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6510829093676793134
 MonoBehaviour:
@@ -14877,8 +14894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: daf2ab606d4db0d4f9ecf4c02137d2a8, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: Should I forgive myself and move on?
   <MemoryType>k__BackingField: 1
 --- !u!50 &7917413809741043254
 Rigidbody2D:
@@ -15573,7 +15590,7 @@ GameObject:
   - component: {fileID: 3098408285779004383}
   - component: {fileID: 3967057569939079506}
   m_Layer: 31
-  m_Name: Memory_1 (9)
+  m_Name: Gang_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15628,8 +15645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 678095381d851334fb550c5032ba1a81, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: Our gang could have been great, but I ruined everything.
   <MemoryType>k__BackingField: 2
 --- !u!50 &3098408285779004383
 Rigidbody2D:
@@ -16450,7 +16467,7 @@ GameObject:
   - component: {fileID: 6523653695073563623}
   - component: {fileID: 4876596232374132883}
   m_Layer: 31
-  m_Name: Memory_1 (3)
+  m_Name: Gang_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16505,8 +16522,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 678095381d851334fb550c5032ba1a81, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 21300000, guid: aa2e2add36df374468e63583ac0e812d, type: 3}
+  <Text>k__BackingField: Those were good times
   <MemoryType>k__BackingField: 2
 --- !u!50 &6523653695073563623
 Rigidbody2D:
@@ -16574,7 +16591,7 @@ GameObject:
   - component: {fileID: 3147132640996006354}
   - component: {fileID: 2108195737149092155}
   m_Layer: 31
-  m_Name: Memory_1 (5)
+  m_Name: Gang_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16629,8 +16646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 678095381d851334fb550c5032ba1a81, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 2bbc0e5a36c687f40be73ca9311ac3be, type: 3}
+  <Text>k__BackingField: '"Weekdays"'
   <MemoryType>k__BackingField: 2
 --- !u!50 &3147132640996006354
 Rigidbody2D:
@@ -16693,7 +16710,7 @@ GameObject:
   - component: {fileID: 251403329118389077}
   - component: {fileID: 2213083301544124351}
   m_Layer: 31
-  m_Name: Memory_1 (2)
+  m_Name: Personality_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16716,7 +16733,7 @@ Transform:
   - {fileID: 7496855434496508191}
   - {fileID: 4957639586049375337}
   m_Father: {fileID: 1040140970208261733}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &733822347242403932
 MonoBehaviour:
@@ -16748,8 +16765,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: daf2ab606d4db0d4f9ecf4c02137d2a8, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 6356716575ba90f4ba0a9442cf147d64, type: 3}
+  <Text>k__BackingField: What a fool I am...
   <MemoryType>k__BackingField: 1
 --- !u!50 &251403329118389077
 Rigidbody2D:
@@ -17937,7 +17954,7 @@ GameObject:
   - component: {fileID: 3339568218147937329}
   - component: {fileID: 4352863935441737724}
   m_Layer: 31
-  m_Name: Memory (5)
+  m_Name: Family_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17960,7 +17977,7 @@ Transform:
   - {fileID: 4528791344236768256}
   - {fileID: 20632929031814644}
   m_Father: {fileID: 1040140970208261733}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &389424130824142318
 MonoBehaviour:
@@ -17992,8 +18009,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 76beef9fdae7b48468ddf07d0400a374, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: Could I exist in two worlds at the same time?
   <MemoryType>k__BackingField: 0
 --- !u!50 &3339568218147937329
 Rigidbody2D:
@@ -18188,7 +18205,7 @@ GameObject:
   - component: {fileID: 2245211453234100590}
   - component: {fileID: 2483211380501817665}
   m_Layer: 31
-  m_Name: Memory_1 (12)
+  m_Name: Personality_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18211,7 +18228,7 @@ Transform:
   - {fileID: 592833998270407741}
   - {fileID: 5602614753884407847}
   m_Father: {fileID: 1040140970208261733}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3030292009733075353
 MonoBehaviour:
@@ -18243,8 +18260,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: daf2ab606d4db0d4f9ecf4c02137d2a8, type: 3}
-  <Text>k__BackingField: aboba
+  <Sprite>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: I will forgive myself and move on no matter what!
   <MemoryType>k__BackingField: 1
 --- !u!50 &2245211453234100590
 Rigidbody2D:
