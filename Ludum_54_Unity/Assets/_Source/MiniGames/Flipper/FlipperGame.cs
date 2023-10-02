@@ -2,6 +2,7 @@ using System;
 using System.Globalization;
 using DG.Tweening;
 using MiniGames.Flipper.Logic;
+using MiniGames.Flipper.View;
 using TMPro;
 using UnityEngine;
 
@@ -12,7 +13,7 @@ namespace MiniGames.Flipper
         [SerializeField] private CardManager cardManager;
         [SerializeField] private CardsRandomizer cardsRandomizer;
         [SerializeField] private float timeToComplete;
-        [SerializeField] private 
+        [SerializeField] private ProgressShower progressShower; 
 
         [SerializeField] private TextMeshProUGUI text;
         
