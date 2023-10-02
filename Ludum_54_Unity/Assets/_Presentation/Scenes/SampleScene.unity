@@ -1236,7 +1236,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &658923504
 GameObject:
@@ -1249,7 +1249,7 @@ GameObject:
   - component: {fileID: 658923505}
   - component: {fileID: 658923506}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: EndingShower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1285,9 +1285,9 @@ MonoBehaviour:
   _memoryPool: {fileID: 0}
   endingPanel: {fileID: 0}
   endingImage: {fileID: 0}
-  familyEnding: {fileID: 0}
-  personalEnding: {fileID: 0}
-  gangEnding: {fileID: 0}
+  familyEnding: {fileID: 21300000, guid: 1868a7bd283d9834e8dad93e5cbe95a8, type: 3}
+  personalEnding: {fileID: 21300000, guid: 92feac1d74765054eae629ba6b1d7ac0, type: 3}
+  gangEnding: {fileID: 21300000, guid: c43ef908bc0e5bd4da95ea9fe749117a, type: 3}
 --- !u!1 &774515819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1817685834166434703, guid: 151e2660b3a3e9645a5017ce4eb099e5, type: 3}
@@ -1594,7 +1594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoriesStarter: {fileID: 406791103}
-  endingShower: {fileID: 2092333263}
+  endingShower: {fileID: 658923506}
 --- !u!1 &986655171 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 547279407132816530, guid: 33c999f4b1e7d6242b20d5bca2dc426a, type: 3}
@@ -2429,56 +2429,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5371a0b0d07e44fbb678dee027c22662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2092333262
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2092333264}
-  - component: {fileID: 2092333263}
-  m_Layer: 0
-  m_Name: EndingShower
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2092333263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092333262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 142079f4eeb441d8956d0c6b0e0cfbb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _memoryPool: {fileID: 814434412}
-  endingPanel: {fileID: 0}
-  endingImage: {fileID: 0}
-  familyEnding: {fileID: 0}
-  personalEnding: {fileID: 0}
-  gangEnding: {fileID: 0}
---- !u!4 &2092333264
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092333262}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6945949, y: 1.9192986, z: 0.16430715}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &547279407245860177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2561,7 +2511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1040140971448371380, guid: 9d4c1632c99e9694a848229c5a70c11f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1040140971448371381, guid: 9d4c1632c99e9694a848229c5a70c11f, type: 3}
       propertyPath: m_RootOrder
