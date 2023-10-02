@@ -42,7 +42,7 @@ namespace Core
 
         private void Awake()
         {
-            _inputActions.Enable();
+            _inputActions.Enable(); 
             _mouseHandler.Bind();
         }
 

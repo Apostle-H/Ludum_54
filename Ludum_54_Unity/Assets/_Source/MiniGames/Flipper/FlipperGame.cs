@@ -4,7 +4,6 @@ using DG.Tweening;
 using MiniGames.Flipper.Logic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 namespace MiniGames.Flipper
 {
@@ -13,6 +12,7 @@ namespace MiniGames.Flipper
         [SerializeField] private CardManager cardManager;
         [SerializeField] private CardsRandomizer cardsRandomizer;
         [SerializeField] private float timeToComplete;
+        [SerializeField] private 
 
         [SerializeField] private TextMeshProUGUI text;
         
