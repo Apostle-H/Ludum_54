@@ -1,3 +1,4 @@
+using Core.Ending;
 using Core.Games;
 using Input;
 using Input.Interactors;
@@ -10,6 +11,7 @@ namespace Core
     public class Bootstrapper : MonoBehaviour
     {
         [SerializeField] private GameObject memoriesStarter;
+        [SerializeField] private EndingShower endingShower;
         
         private MainActions _inputActions;
         private MouseHandler _mouseHandler;
@@ -17,6 +19,8 @@ namespace Core
         private MiniGamesManager _miniGamesManager;
         
         private MemoriesGame _game;
+
+        private int dayCounter;
         
         [Inject]
         private void Init(MainActions inputActions, MouseHandler mouseHandler, MiniGamesManager miniGamesManager, MemoriesGame game)
@@ -44,7 +48,12 @@ namespace Core
 
         private void OpenPlayMemories()
         {
+            if (dayCounter >= 7)
+            {
+                endingShower.Show();
+            }
             memoriesStarter.SetActive(true);
+            dayCounter++;
         }
     }
 }

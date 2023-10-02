@@ -72,7 +72,7 @@ namespace MiniGames.Connect.Logic
 
             if (socket == correctSocket)
                 _placedCorrectSignal.Dispatch(this);
-            else
+            else if (socket != startSocket)
                 _placedWrongSignal.Dispatch(this);
             
             return true;
