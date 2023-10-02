@@ -15,7 +15,7 @@ namespace MiniGames.Repeater.View
 
         private SequenceElementFlasherConfigSO _configSO;
 
-        public Sequence ShowFlashSequence { get; private set; }
+        public Sequence ShowFlashSequence => GetNewShowFlashSequence();
         public Sequence PressFlashSequence { get; private set; }
 
         [Inject]
@@ -27,8 +27,6 @@ namespace MiniGames.Repeater.View
 
         private void InitSequence()
         {
-            ShowFlashSequence = GetNewShowFlashSequence();
-
             PressFlashSequence = GetNewPressFlashSequence();
         }
 
@@ -37,10 +35,11 @@ namespace MiniGames.Repeater.View
             var showFlashSequence = DOTween.Sequence();
             showFlashSequence.SetAutoKill(false);
             showFlashSequence.Pause();
-            
-            showFlashSequence.Append(showRenderer.DOColor(_configSO.ShowFlashColor, _configSO.ShowFlashTime));
-            showFlashSequence.AppendInterval(_configSO.ShowStayTime);
-            showFlashSequence.Append(showRenderer.DOColor(Color.white, _configSO.ShowFadeTime));
+
+            showFlashSequence.AppendInterval(_configSO.ShowFlashTime);
+            showFlashSequence.AppendCallback(() => showRenderer.gameObject.SetActive(true));
+            showFlashSequence.AppendInterval(_configSO.ShowStayTime + _configSO.ShowFadeTime);
+            showFlashSequence.AppendCallback(() => showRenderer.gameObject.SetActive(false));
             return showFlashSequence;
         }
         

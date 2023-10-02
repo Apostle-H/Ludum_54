@@ -106,8 +106,10 @@ namespace MiniGames.Repeater
             _showFlashSequence.Pause();
 
             foreach (var guid in _sequenceManager.CurrentSequence)
+            {
                 _showFlashSequence.Append(_sceneConfig.ElementsFlashers.First(flasher => flasher.Element.Guid == guid).ShowFlashSequence);
-            
+            }
+
             _showFlashSequence.onPlay += _inputActions.Disable;
             _showFlashSequence.onUpdate += CheckStep;
             _showFlashSequence.onComplete += _inputActions.Enable;

@@ -1,6 +1,8 @@
 using System;
+using System.Globalization;
 using DG.Tweening;
 using MiniGames.Flipper.Logic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -11,6 +13,8 @@ namespace MiniGames.Flipper
         [SerializeField] private CardManager cardManager;
         [SerializeField] private CardsRandomizer cardsRandomizer;
         [SerializeField] private float timeToComplete;
+
+        [SerializeField] private TextMeshProUGUI text;
         
         public event Action OnWin;
         public event Action OnLose;
@@ -18,13 +22,14 @@ namespace MiniGames.Flipper
         private int counter;
         private float timer;
 
-        private bool play;
+        private bool play;  
 
         void IMiniGame.Start()
         {
             counter = 0;
             timer = timeToComplete;
             play = true;
+            text.gameObject.SetActive(true);
             Bind(); 
             
             cardsRandomizer.Randomize();
@@ -38,6 +43,8 @@ namespace MiniGames.Flipper
 
         private void Expose()
         {
+            
+            text.gameObject.SetActive(false);
             cardManager.OnMatch -= Count;
             cardManager.Expose();
         }
@@ -60,8 +67,10 @@ namespace MiniGames.Flipper
             }
             
             timer -= Time.deltaTime;
+            text.text = ((int)MathF.Ceiling(timer)).ToString();
             if (timer <= 0)
             {
+                text.text = "0";
                 play = false;
                 Expose();
                 OnLose?.Invoke();

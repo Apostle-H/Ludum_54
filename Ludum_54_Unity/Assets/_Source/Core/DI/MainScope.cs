@@ -2,6 +2,8 @@ using Core.Games.Data;
 using Input;
 using Input.Interactors;
 using Input.Interactors.Data;
+using Memories;
+using Memories.Meta;
 using Memories.Puzzle.Data;
 using MiniGames.Connect;
 using MiniGames.Connect.Data;
@@ -23,6 +25,10 @@ namespace Core.DI
         [SerializeField] private ConnectGameScope connectGameScope;
         [SerializeField] private FlipperScope flipperScope;
         [SerializeField] private MiniGamesScope miniGamesScope;
+
+        [SerializeField] private MemoriesGame memoriesGame;
+        [SerializeField] private MemoryShower _shower;
+        [SerializeField] private MemoryPool _pool;
         
         protected override void Configure(IContainerBuilder builder)
         {
@@ -31,6 +37,7 @@ namespace Core.DI
             ConfigureRepeaterGame(builder);
             ConfigureConnectGame(builder);
             ConfigureFlipperGame(builder);
+            ConfigureMemories(builder);
 
             builder.RegisterInstance(miniGamesScope.MiniGamesManager);
         }
@@ -73,6 +80,13 @@ namespace Core.DI
         private void ConfigureFlipperGame(IContainerBuilder builder)
         {
             builder.RegisterInstance(flipperScope.FlipperGameSceneConfig.FlipperGame);
+        }
+
+        private void ConfigureMemories(IContainerBuilder builder)
+        {
+            builder.RegisterInstance(memoriesGame);
+            builder.RegisterInstance(_shower);
+            builder.RegisterInstance(_pool);
         }
     }
 }

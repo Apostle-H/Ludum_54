@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Input.Interactions;
+using Memories.Meta;
 using Memories.Puzzle.Data;
 using Memories.Puzzle.Signals;
 using Snapping;
@@ -12,16 +13,26 @@ namespace Memories.Puzzle
     public class PuzzlePart : MonoBehaviour, IDraggable
     {
         [field: SerializeField] public Block[] Blocks { get; private set; }
+        [field: SerializeField] public Memory Memory { get; private set; }
         
         private PuzzlePartConfigSO _configSO;
 
+        private MemoryShower _shower;
+
         private PuzzleBlockPlacedSignal _placedSignal;
         private PuzzleBlockMissedSignal _missedSignal;
+        private PuzzlePartDisconnectedSignal _disconnectedSignal;
+
+        private Vector2 startPos;
         
         public Socket[] Sockets { get; private set; }
         
         [Inject]
-        private void Init(PuzzlePartConfigSO configSO) => _configSO = configSO;
+        private void Init(PuzzlePartConfigSO configSO, MemoryShower shower)
+        {
+            _configSO = configSO;
+            _shower = shower;
+        }
 
         private void Awake()
         {
@@ -33,8 +44,12 @@ namespace Memories.Puzzle
 
         public void PickUp()
         {
+            startPos = transform.position;
+            
             foreach (var block in Blocks)
                 block.Disconnect();
+            
+            _disconnectedSignal?.Dispatch(this);
         }
 
         public void Move(Vector3 newPos) => transform.position = newPos;
@@ -60,6 +75,7 @@ namespace Memories.Puzzle
                 Blocks[i].Connect(Sockets[i]);
                 Sockets[i].Connect(Blocks[i]);
             }
+            
             return true;
         }
 
@@ -69,6 +85,11 @@ namespace Memories.Puzzle
 
         public void Released(Vector2 _)
         {
+            if (((Vector2)transform.position - startPos).magnitude < .2f)
+            {
+                _shower.Show(Memory);
+            }
+            
             if (TryPlace())
                 _placedSignal?.Dispatch(this);
             else
