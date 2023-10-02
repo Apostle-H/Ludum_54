@@ -5,6 +5,7 @@ using MiniGames.Flipper.Logic;
 using MiniGames.Flipper.View;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace MiniGames.Flipper
 {
@@ -13,7 +14,7 @@ namespace MiniGames.Flipper
         [SerializeField] private CardManager cardManager;
         [SerializeField] private CardsRandomizer cardsRandomizer;
         [SerializeField] private float timeToComplete;
-        [SerializeField] private ProgressShower progressShower; 
+        [FormerlySerializedAs("progressShower")] [SerializeField] private ProgressShowerFlipper progressShowerFlipper; 
 
         [SerializeField] private TextMeshProUGUI text;
         
@@ -31,6 +32,7 @@ namespace MiniGames.Flipper
             timer = timeToComplete;
             play = true;
             text.gameObject.SetActive(true);
+            progressShowerFlipper.Restart();
             Bind(); 
             
             cardsRandomizer.Randomize();
@@ -39,6 +41,7 @@ namespace MiniGames.Flipper
         private void Bind()
         {
             cardManager.OnMatch += Count;
+            cardManager.OnMatch += progressShowerFlipper.Up;
             cardManager.Bind();
         }
 
@@ -47,6 +50,7 @@ namespace MiniGames.Flipper
             
             text.gameObject.SetActive(false);
             cardManager.OnMatch -= Count;
+            cardManager.OnMatch -= progressShowerFlipper.Up;
             cardManager.Expose();
         }
 

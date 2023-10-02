@@ -37,6 +37,8 @@ namespace MiniGames.Flipper.Logic
             
             isSecondCard = false;
             secondCard = card;
+            firstCard.Close();
+            secondCard.Close();
             if (firstCard.index != card.index || firstCard == card) 
                 return;
             

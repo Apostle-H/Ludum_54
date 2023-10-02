@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace MiniGames.Flipper.View
 {
-    public class ProgressShower : MonoBehaviour
+    public class ProgressShowerFlipper : MonoBehaviour
     {
         [SerializeField] private GameObject[] progressImages;
 
