@@ -4,6 +4,7 @@ using DG.Tweening;
 using Input;
 using MiniGames.Repeater.Data;
 using MiniGames.Repeater.Logic;
+using MiniGames.Repeater.View;
 
 namespace MiniGames.Repeater
 {
@@ -13,6 +14,7 @@ namespace MiniGames.Repeater
         private readonly SequenceManager _sequenceManager;
         private readonly SequenceElementFlasherConfigSO _flasherConfigSO;
         private readonly MainActions _inputActions;
+        private readonly ProgressShower _progressShower;
 
         private Sequence _showFlashSequence;
 
@@ -20,16 +22,18 @@ namespace MiniGames.Repeater
         public event Action OnLose;
 
         public RepeaterGame(RepeatedGameSceneConfig sceneConfig, SequenceManager sequenceManager, 
-            SequenceElementFlasherConfigSO flasherConfigSO, MainActions inputActions)
+            SequenceElementFlasherConfigSO flasherConfigSO, MainActions inputActions, ProgressShower progressShower)
         {
             _sceneConfig = sceneConfig;
             _sequenceManager = sequenceManager;
             _flasherConfigSO = flasherConfigSO;
             _inputActions = inputActions;
+            _progressShower = progressShower;
         }
 
         public void Start()
         {
+            _progressShower.Restart();
             Bind();
             InitSequence();
             NextStep();
@@ -38,6 +42,7 @@ namespace MiniGames.Repeater
         private void Bind()
         {
             _sequenceManager.OnStepRepeated += NextStep;
+            _sequenceManager.OnStepRepeated += _progressShower.Up;
             _sequenceManager.OnFullRepeated += Win;
             _sequenceManager.OnMissed += Lose;
             
@@ -51,6 +56,7 @@ namespace MiniGames.Repeater
         private void Expose()
         {
             _sequenceManager.OnStepRepeated -= NextStep;
+            _sequenceManager.OnStepRepeated -= _progressShower.Up;
             _sequenceManager.OnFullRepeated -= Win;
             _sequenceManager.OnMissed -= Lose;
             

@@ -1,4 +1,5 @@
 using System;
+using MiniGames.Repeater.View;
 using UnityEngine;
 
 namespace MiniGames.Repeater.Data
@@ -9,5 +10,6 @@ namespace MiniGames.Repeater.Data
         [field: SerializeField] public RepeatedGameSceneConfig RepeatedGameSceneConfig { get; private set; }
         [field: SerializeField] public SequenceManagerConfigSO SequenceManagerConfigSO { get; private set; }
         [field: SerializeField] public SequenceElementFlasherConfigSO SequenceElementFlasherConfigSO { get; private set; }
+        [field: SerializeField] public ProgressShower ProgressShower { get; private set; }
     }
 }

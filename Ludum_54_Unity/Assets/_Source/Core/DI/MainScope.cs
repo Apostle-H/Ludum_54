@@ -64,6 +64,7 @@ namespace Core.DI
             builder.RegisterInstance(repeaterGameScope.RepeatedGameSceneConfig);
             builder.RegisterInstance(repeaterGameScope.SequenceManagerConfigSO);
             builder.RegisterInstance(repeaterGameScope.SequenceElementFlasherConfigSO);
+            builder.RegisterInstance(repeaterGameScope.ProgressShower);
 
             builder.Register<SequenceManager>(Lifetime.Singleton);
             builder.Register<RepeaterGame>(Lifetime.Singleton);
