@@ -1,5 +1,4 @@
 using System;
-using Memories;
 using Memories.Meta;
 using Memories.Meta.Data;
 using MiniGames;
@@ -13,8 +12,6 @@ namespace Core.Games
 {
     public class MiniGamesManager : MonoBehaviour
     {
-        [SerializeField] private MemoryShower memoryShower;
-        
         private ConnectGame _connectGame;
         private FlipperGame _flipperGame;
         private RepeaterGame _repeaterGame;
@@ -65,7 +62,6 @@ namespace Core.Games
         private void WinConnected()
         {
             _memoryPool.ObtainMemory(MemoryType.Personal);
-            memoryShower.Show(_memoryPool.ObtainedMemories[MemoryType.Personal][0]);
             _playedConnected = true;
             
             Win();
@@ -74,7 +70,6 @@ namespace Core.Games
         private void WinRepeater()
         {
             _memoryPool.ObtainMemory(MemoryType.Gang);
-            memoryShower.Show(_memoryPool.ObtainedMemories[MemoryType.Gang][0]);
             _playerRepeater = true;
             Win();
         }
@@ -82,7 +77,6 @@ namespace Core.Games
         private void WinFlipper()
         {
             _memoryPool.ObtainMemory(MemoryType.Family);
-            memoryShower.Show(_memoryPool.ObtainedMemories[MemoryType.Family][0]);
             _playerFlipper = true;
             Win();
         }

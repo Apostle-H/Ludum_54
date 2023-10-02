@@ -193,7 +193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82c511afd3fd432b8004abfb25d3dda9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  memoryShower: {fileID: 986655173}
   connectGameParent: {fileID: 1655562335}
   flipperGameParent: {fileID: 398565759}
   repeaterGameParent: {fileID: 774515819}
@@ -993,56 +992,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &658923504
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 658923505}
-  - component: {fileID: 658923506}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &658923505
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658923504}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1635292694}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &658923506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658923504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 142079f4eeb441d8956d0c6b0e0cfbb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _memoryPool: {fileID: 0}
-  endingPanel: {fileID: 0}
-  endingImage: {fileID: 0}
-  familyEnding: {fileID: 0}
-  personalEnding: {fileID: 0}
-  gangEnding: {fileID: 0}
 --- !u!1 &774515819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1817685834166434703, guid: 151e2660b3a3e9645a5017ce4eb099e5, type: 3}
@@ -1053,17 +1002,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1817685834166434696, guid: 151e2660b3a3e9645a5017ce4eb099e5, type: 3}
   m_PrefabInstance: {fileID: 1817685833526138852}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &774515821 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 952616069809718826, guid: 151e2660b3a3e9645a5017ce4eb099e5, type: 3}
-  m_PrefabInstance: {fileID: 1817685833526138852}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774515819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99c43113dba449df833c46dc6dadef96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &800460137 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1551289566798888862, guid: 151e2660b3a3e9645a5017ce4eb099e5, type: 3}
@@ -1376,7 +1314,6 @@ MonoBehaviour:
   cardManager: {fileID: 398565761}
   cardsRandomizer: {fileID: 398565762}
   timeToComplete: 10
-  progressShowerFlipper: {fileID: 1603050167}
   text: {fileID: 471650577}
 --- !u!114 &1171426650 stripped
 MonoBehaviour:
@@ -1683,17 +1620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd1cfd937441bdb48288b5100024f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1603050167 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1599363253201380129, guid: 1b25f9a27445e8e4d925ae237bae9be0, type: 3}
-  m_PrefabInstance: {fileID: 8672274000311027015}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5ae84d43bdd4601900c5d6c1a628765, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1626139051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1871,7 +1797,6 @@ Transform:
   - {fileID: 926670430}
   - {fileID: 1917608845}
   - {fileID: 814434411}
-  - {fileID: 658923505}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2000,7 +1925,7 @@ MonoBehaviour:
       - {fileID: 842320277}
     <SequenceManagerConfigSO>k__BackingField: {fileID: 11400000, guid: f3384f15465db6c42b92a49c6be0876e, type: 2}
     <SequenceElementFlasherConfigSO>k__BackingField: {fileID: 11400000, guid: bab6d8948320117409b507c1fac76137, type: 2}
-    <ProgressShower>k__BackingField: {fileID: 774515821}
+    <ProgressShower>k__BackingField: {fileID: 0}
   connectGameScope:
     <ConnectGameSceneConfig>k__BackingField:
       <EndSocketsRandomizer>k__BackingField: {fileID: 1203259217}
@@ -2287,10 +2212,6 @@ PrefabInstance:
     - target: {fileID: 8672274000466191416, guid: 1b25f9a27445e8e4d925ae237bae9be0, type: 3}
       propertyPath: m_Name
       value: Flipper
-      objectReference: {fileID: 0}
-    - target: {fileID: 8672274000466191416, guid: 1b25f9a27445e8e4d925ae237bae9be0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8672274000466191559, guid: 1b25f9a27445e8e4d925ae237bae9be0, type: 3}
       propertyPath: m_RootOrder
