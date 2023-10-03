@@ -1,5 +1,7 @@
+using System;
 using Core.Ending;
 using Core.Games;
+using DG.Tweening;
 using Input;
 using Input.Interactors;
 using Memories;
@@ -12,6 +14,7 @@ namespace Core
     {
         [SerializeField] private GameObject memoriesStarter;
         [SerializeField] private EndingShower endingShower;
+        public Fader fader;
         
         private MainActions _inputActions;
         private MouseHandler _mouseHandler;
@@ -35,9 +38,17 @@ namespace Core
             _game.OnGameEnded += Rastart;
         }
 
+        private void Start()
+        {
+            fader.fadeIn.onComplete += () => fader.fadeOut.Restart();
+            fader.fadeOut.onComplete += _miniGamesManager.Restart;
+
+            fader.fadeImage.DOFade(0, fader.fadeTime);
+        }
+
         private void Rastart()
         {
-            _miniGamesManager.Restart();
+            fader.fadeIn.Restart();
         }
 
         private void Awake()

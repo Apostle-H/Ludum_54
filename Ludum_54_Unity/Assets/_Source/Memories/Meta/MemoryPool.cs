@@ -47,7 +47,6 @@ namespace Memories.Meta
             SavedMemories[memory.MemoryType].Add(memory);
             
             ObtainedMemories[memory.MemoryType].Remove(memory);
-            Debug.Log(1);
         }
 
         public void UnSaveMemory(Memory memory)
