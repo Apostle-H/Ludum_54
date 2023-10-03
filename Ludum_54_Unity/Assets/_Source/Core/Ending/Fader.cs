@@ -40,7 +40,7 @@ namespace Core.Ending
         private void InitSequence()
         {
             fadeIn = DOTween.Sequence();
-            // fadeIn.set
+            fadeIn.SetAutoKill(fadeImage);
         }
     }
 }

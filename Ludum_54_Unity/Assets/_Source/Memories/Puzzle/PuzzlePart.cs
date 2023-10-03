@@ -46,6 +46,9 @@ namespace Memories.Puzzle
         public void PickUp()
         {
             startPos = transform.position;
+
+            if (Blocks.Any(block => !block.Connected))
+                return;
             
             foreach (var block in Blocks)
                 block.Disconnect();
