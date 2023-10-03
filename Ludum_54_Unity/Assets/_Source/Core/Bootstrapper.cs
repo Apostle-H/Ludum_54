@@ -26,7 +26,7 @@ namespace Core
 
         public CounterUI counterUI;
 
-        public int dayCounter = 7;
+        public int dayCounter = 1;
         // private int dayCounter ;
         
         [Inject]
