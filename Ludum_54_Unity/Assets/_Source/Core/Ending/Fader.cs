@@ -31,13 +31,13 @@ namespace Core.Ending
         private void InitSequence()
         {
             fadeIn = DOTween.Sequence();
-            fadeIn.SetAutoKill(fade);
+            fadeIn.SetAutoKill(false);
             fadeIn.Pause();
 
             fadeIn.Append(fade.DOFade(1f, fadeTime));
             
             fadeOut = DOTween.Sequence();
-            fadeOut.SetAutoKill(fade);
+            fadeOut.SetAutoKill(false);
             fadeOut.Pause();
 
             fadeOut.Append(fade.DOFade(0f, fadeTime));
