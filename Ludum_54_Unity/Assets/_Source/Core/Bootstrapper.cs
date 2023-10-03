@@ -26,8 +26,8 @@ namespace Core
 
         public CounterUI counterUI;
 
-        // private int dayCounter = 7;
-        private int dayCounter ;
+        public int dayCounter = 7;
+        // private int dayCounter ;
         
         [Inject]
         private void Init(MainActions inputActions, MouseHandler mouseHandler, MiniGamesManager miniGamesManager, MemoriesGame game)
@@ -41,7 +41,7 @@ namespace Core
             _miniGamesManager.OnGamesComplete += OpenPlayMemories;
             _game.OnGameEnded += Rastart;
 
-            counterUI.counterText.text = $"{dayCounter + 1} / 7";
+            counterUI.counterText.text = $"{dayCounter} / 7";
         }
 
         private void Start()
@@ -50,6 +50,14 @@ namespace Core
             fader.fadeIn.onComplete += () => fader.fadeOut.Restart();
             fader.fadeIn.onComplete += () => counterUI.counterText.text = $"{dayCounter + 1} / 7";
             fader.fadeOut.onComplete += _miniGamesManager.Restart;
+
+            fader.fadeIn.onComplete += () =>
+            {
+                if (dayCounter >= 7)
+                {
+                    endingShower.Show();
+                }
+            };
 
 
             Sequence newSequence = DOTween.Sequence();
@@ -60,6 +68,7 @@ namespace Core
         private void Rastart()
         {
             fader.fadeIn.Restart();
+            
         }
 
         private void Awake()
@@ -72,7 +81,7 @@ namespace Core
         {
             if (dayCounter >= 7)
             {
-                endingShower.Show();
+                
             }
             memoriesStarter.SetActive(true);
             dayCounter++;
