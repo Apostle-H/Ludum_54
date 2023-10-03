@@ -172,7 +172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: The choice begins here
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1737,13 +1737,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textUI: {fileID: 34793333}
   texts:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
+  - Should I leave everything as is?
+  - Is it worth dreaming about the past?
+  - Is the choice really difficult?
+  - Doubts create pain
+  - Thoughts will dilute the fire inside me
+  - I'm close to the answer...
+  - I made a choice...
 --- !u!1 &926670429
 GameObject:
   m_ObjectHideFlags: 0
