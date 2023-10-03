@@ -26,7 +26,8 @@ namespace Core
 
         public CounterUI counterUI;
 
-        private int dayCounter;
+        // private int dayCounter = 7;
+        private int dayCounter ;
         
         [Inject]
         private void Init(MainActions inputActions, MouseHandler mouseHandler, MiniGamesManager miniGamesManager, MemoriesGame game)
@@ -50,7 +51,10 @@ namespace Core
             fader.fadeIn.onComplete += () => counterUI.counterText.text = $"{dayCounter + 1} / 7";
             fader.fadeOut.onComplete += _miniGamesManager.Restart;
 
-            fader.fade.DOFade(0, fader.fadeTime);
+
+            Sequence newSequence = DOTween.Sequence();
+            newSequence.AppendInterval(0.5f);
+            newSequence.Append(fader.fade.DOFade(0, fader.fadeTime));
         }
 
         private void Rastart()
