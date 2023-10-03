@@ -1,13 +1,14 @@
 using System;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Core.Ending
 {
     public class Fader : MonoBehaviour
     {
-        public Image fadeImage;
+        public CanvasGroup fade;
         public float fadeTime;
 
         public bool onOnAwake;
@@ -20,26 +21,26 @@ namespace Core.Ending
             InitSequence();
             if (onOnAwake)
             {
-                fadeImage.color = new Color(0, 0, 0, 1);
+                fade.alpha = 1f;
                 return;
             }
             
-            fadeImage.color = new Color(0, 0, 0, 0);
+            fade.alpha = 0f;
         }
 
         private void InitSequence()
         {
             fadeIn = DOTween.Sequence();
-            fadeIn.SetAutoKill(fadeImage);
+            fadeIn.SetAutoKill(fade);
             fadeIn.Pause();
 
-            fadeIn.Append(fadeImage.DOFade(1f, fadeTime));
+            fadeIn.Append(fade.DOFade(1f, fadeTime));
             
             fadeOut = DOTween.Sequence();
-            fadeOut.SetAutoKill(fadeImage);
+            fadeOut.SetAutoKill(fade);
             fadeOut.Pause();
 
-            fadeOut.Append(fadeImage.DOFade(0f, fadeTime));
+            fadeOut.Append(fade.DOFade(0f, fadeTime));
         }
     }
 }

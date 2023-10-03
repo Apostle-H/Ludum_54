@@ -1,4 +1,3 @@
-using System;
 using Core.Ending;
 using Core.Games;
 using DG.Tweening;
@@ -23,6 +22,8 @@ namespace Core
         
         private MemoriesGame _game;
 
+        public textSwitcher textSwitcher;
+
         private int dayCounter;
         
         [Inject]
@@ -40,10 +41,11 @@ namespace Core
 
         private void Start()
         {
+            fader.fadeIn.onPlay += textSwitcher.Next;
             fader.fadeIn.onComplete += () => fader.fadeOut.Restart();
             fader.fadeOut.onComplete += _miniGamesManager.Restart;
 
-            fader.fadeImage.DOFade(0, fader.fadeTime);
+            fader.fade.DOFade(0, fader.fadeTime);
         }
 
         private void Rastart()
