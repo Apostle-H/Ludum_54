@@ -38,6 +38,7 @@ namespace Memories.Puzzle
         {
             _placedSignal = deVoid.Utils.Signals.Get<PuzzleBlockPlacedSignal>();
             _missedSignal = deVoid.Utils.Signals.Get<PuzzleBlockMissedSignal>();
+            _disconnectedSignal = deVoid.Utils.Signals.Get<PuzzlePartDisconnectedSignal>();
 
             Sockets = new Socket[Blocks.Length];
         }
@@ -49,7 +50,7 @@ namespace Memories.Puzzle
             foreach (var block in Blocks)
                 block.Disconnect();
             
-            _disconnectedSignal?.Dispatch(this);
+            _disconnectedSignal.Dispatch(this);
         }
 
         public void Move(Vector3 newPos) => transform.position = newPos;
@@ -91,9 +92,9 @@ namespace Memories.Puzzle
             }
             
             if (TryPlace())
-                _placedSignal?.Dispatch(this);
+                _placedSignal.Dispatch(this);
             else
-                _missedSignal?.Dispatch(this);
+                _missedSignal.Dispatch(this);
         }
     }
 }

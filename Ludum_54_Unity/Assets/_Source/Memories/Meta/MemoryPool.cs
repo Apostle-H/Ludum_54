@@ -58,6 +58,15 @@ namespace Memories.Meta
 
         public void DeleteMemories()
         {
+            foreach (var memory in ObtainedMemories[MemoryType.Family])
+                memory.gameObject.SetActive(false);
+            
+            foreach (var memory in ObtainedMemories[MemoryType.Personal])
+                memory.gameObject.SetActive(false);
+            
+            foreach (var memory in ObtainedMemories[MemoryType.Gang])
+                memory.gameObject.SetActive(false);
+            
             ObtainedMemories[MemoryType.Family].Clear();
             ObtainedMemories[MemoryType.Personal].Clear();
             ObtainedMemories[MemoryType.Gang].Clear();

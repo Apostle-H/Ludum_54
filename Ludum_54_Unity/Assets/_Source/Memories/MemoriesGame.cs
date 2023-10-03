@@ -58,7 +58,7 @@ namespace Memories
 
         private void Unsave(PuzzlePart puzzlePart)
         {
-            _memoryPool.SaveMemory(puzzlePart.Memory);
+            _memoryPool.UnSaveMemory(puzzlePart.Memory);
         }
     }
 }
