@@ -1351,5 +1351,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: {fileID: 1692275619}
-  fadeTime: 0.5
+  fadeTime: 1
   onOnAwake: 0

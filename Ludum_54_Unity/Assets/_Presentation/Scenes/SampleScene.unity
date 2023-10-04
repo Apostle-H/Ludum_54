@@ -1885,7 +1885,7 @@ MonoBehaviour:
   fader: {fileID: 917377266}
   textSwitcher: {fileID: 917377267}
   counterUI: {fileID: 917377268}
-  dayCounter: 7
+  dayCounter: 1
 --- !u!1 &986655171 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 547279407132816530, guid: 33c999f4b1e7d6242b20d5bca2dc426a, type: 3}
