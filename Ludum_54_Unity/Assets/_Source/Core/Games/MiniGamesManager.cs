@@ -109,6 +109,7 @@ namespace Core.Games
             connectGameParent.gameObject.SetActive(false);
             flipperGameParent.gameObject.SetActive(false);
             repeaterGameParent.gameObject.SetActive(false);
+            
             _hasStartGame = false;
         }
 

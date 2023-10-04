@@ -45,7 +45,10 @@ namespace Core.Ending
                     memoriesCount.Add(savedMemory.Key, 0);
                 }
 
-                memoriesCount[savedMemory.Key]++;
+                foreach (var memory in savedMemory.Value)
+                {
+                    memoriesCount[savedMemory.Key]++;
+                }
             }
 
             if (memoriesCount[MemoryType.Family] > memoriesCount[MemoryType.Personal])
