@@ -48,7 +48,7 @@ namespace Core
         {
             fader.fadeIn.onPlay += textSwitcher.Next;
             fader.fadeIn.onComplete += () => fader.fadeOut.Restart();
-            fader.fadeIn.onComplete += () => counterUI.counterText.text = $"{dayCounter + 1} / 7";
+            fader.fadeIn.onComplete += () => counterUI.counterText.text = $"{dayCounter} / 7";
             fader.fadeOut.onComplete += _miniGamesManager.Restart;
 
             fader.fadeIn.onComplete += () =>
